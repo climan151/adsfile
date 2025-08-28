@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3268350626173863"
+     crossorigin="anonymous"></script>
+<meta name="google-adsense-account" content="ca-pub-3268350626173863">
 <title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,6 +30,16 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 <div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
   
 
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-black w3-button" onclick="homePage()">Home Page</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black" onclick="openWin()">Azure AI Fundamentals</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black" onclick="openWin2()">Data Analytics Fundamentals</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black" onclick="openWin3()">Cancer Biology</a>
+    </div>
+  </div>
+  
   <!-- Modal for full size images on click-->
   <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
     <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
@@ -36,6 +49,18 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     </div>
   </div>
 
+  <!-- About section -->
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+    <h4><b>Microsoft Azure AI Fundamentals</b></h4>
+    <img src="imagemicrosoft.png" alt="Me" class="w3-image w3-padding-32" width="600" height="650">
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <h4>Course Description</h4>
+    <p>This beginner-level course introduces core concepts of artificial intelligence and how they're implemented using Microsoft Azure. It covers machine learning, computer vision, natural language processing, and conversational AI, with real-world use cases. No coding or AI experience is required—just curiosity and a desire to understand how AI works in the cloud.</p>  
+      <embed src="azure.pdf" width="100%" height="600px" type="application/pdf">
+
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="w3-container w3-padding-32 w3-grey" id="courses">  
@@ -63,6 +88,22 @@ function w3_close() {
 }
 
 
+//change pages
+function homePage() {
+  window.open("index.html","_self");
+}
+
+function openWin() {
+  window.open("thefirst.html","_self");
+}
+
+function openWin2() {
+  window.open("thesecond.html","_self");
+}
+
+function openWin3() {
+  window.open("thethird.html","_self");
+}
 
 // Modal Image Gallery
 function onClick(element) {
@@ -77,3 +118,4 @@ function onClick(element) {
 
 </body>
 </html>
+
